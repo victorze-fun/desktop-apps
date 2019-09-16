@@ -1,5 +1,5 @@
 # Tiberio
-![](https://raw.githubusercontent.com/victorze/desktop-apps/invoice/master/tiberio.gif)
+![](https://raw.githubusercontent.com/victorze/desktop-apps/master/invoice/tiberio.gif)
 
 ## Requerimientos
 - Python 3.5 o superior
