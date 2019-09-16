@@ -6,7 +6,7 @@
 
 ## Instalación y ejecución
 ```bash
-pip3 install PySide
+pip3 install PySide2
 python3 tiberio/main.py
 ```
 
