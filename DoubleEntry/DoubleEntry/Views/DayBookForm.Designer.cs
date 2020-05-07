@@ -34,6 +34,7 @@
             this.account = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.debit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.credit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.transactionButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,11 +49,11 @@
             this.account,
             this.debit,
             this.credit});
-            this.dataGridView.Location = new System.Drawing.Point(12, 58);
+            this.dataGridView.Location = new System.Drawing.Point(12, 12);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
-            this.dataGridView.Size = new System.Drawing.Size(423, 462);
+            this.dataGridView.Size = new System.Drawing.Size(423, 469);
             this.dataGridView.TabIndex = 0;
             // 
             // item
@@ -88,14 +89,26 @@
             this.credit.Name = "credit";
             this.credit.ReadOnly = true;
             // 
+            // transactionButton
+            // 
+            this.transactionButton.Location = new System.Drawing.Point(164, 497);
+            this.transactionButton.Name = "transactionButton";
+            this.transactionButton.Size = new System.Drawing.Size(112, 23);
+            this.transactionButton.TabIndex = 1;
+            this.transactionButton.Text = "Transacción";
+            this.transactionButton.UseVisualStyleBackColor = true;
+            this.transactionButton.Click += new System.EventHandler(this.transactionButton_Click);
+            // 
             // DayBookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(448, 532);
+            this.Controls.Add(this.transactionButton);
             this.Controls.Add(this.dataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "DayBookForm";
-            this.Text = "DayBook";
+            this.Text = "Libro Diario";
             this.Load += new System.EventHandler(this.DayBookForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -110,5 +123,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn account;
         private System.Windows.Forms.DataGridViewTextBoxColumn debit;
         private System.Windows.Forms.DataGridViewTextBoxColumn credit;
+        private System.Windows.Forms.Button transactionButton;
     }
 }

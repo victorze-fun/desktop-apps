@@ -38,5 +38,12 @@ namespace DoubleEntry.Views
             dataGridView.Rows[n].Cells[3].Value = "0";
             dataGridView.Rows[n].Cells[4].Value = "10,000";
         }
+
+        private void transactionButton_Click(object sender, EventArgs e)
+        {
+            var transactionFrom = new TransactionForm();
+            AddOwnedForm(transactionFrom);
+            transactionFrom.ShowDialog();
+        }
     }
 }
